@@ -1,4 +1,4 @@
-var http=require('http');
+9var http=require('http');
 var fs=require('fs');
 var path=require('path');
 var mime=require('mime');
@@ -45,8 +45,8 @@ var server=http.createServer(function(request,response){
 	var absPath='./'+filePath;
 	serveStatic(response,cache,absPath);
 });
-server.listen(3000,function(){
-	console.log("server listening on port 3000");
+server.listen(8080,function(){
+	console.log("server listening on port 8080");
 });
 var chatServer=require('./lib/chat_server');
 chatServer.listen(server);
